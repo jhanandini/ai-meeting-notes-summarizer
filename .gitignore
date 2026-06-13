@@ -1,0 +1,6 @@
+# Secret API Keys
+.env
+
+# Streamlit/Python cache files
+__pycache__/
+*.pyc
