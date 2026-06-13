@@ -42,3 +42,4 @@ if st.button("Generate Smart Summary"):
             # Display Output
             st.markdown("---")
             st.markdown(response.text)
+
