@@ -1,27 +1,22 @@
 # 🗒️ AI Meeting Notes Summarizer
 
-A Python NLP web app that automatically summarizes meeting notes 
-and extracts action items.
+A simple tool that turns long, messy meeting notes into clear summaries and actionable points. Built using **Streamlit** and **Google Gemini 2.5 Flash**.
 
 ## Features
 - Automatic text summarization
 - Action item extraction
-- Simple web interface
+- Clean web interface
 
 ## Tech Stack
-Python, spaCy, sumy, Streamlit
+Python, Streamlit, Google Gemini 2.5 Flash API
 
 ## How To Run
 
-**Step 1 — Install libraries**
-pip install streamlit spacy sumy
+**Step 1 - Install libraries**
+pip install streamlit google-genai python-dotenv
 
-**Step 2 — Download language models**
-python -m spacy download en_core_web_sm
-python -c "import nltk; nltk.download('punkt'); nltk.download('punkt_tab')"
+**Step 2 - Set up API Key**
+Create a .env file in your project folder and add your key: GOOGLE_API_KEY="your_api_key_here"
 
-**Step 3 — Run the app**
+**Step 3 - Run the app**
 streamlit run app.py
-
-**Step 4 — Open browser**
-http://localhost:8501
